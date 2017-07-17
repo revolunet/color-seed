@@ -14,7 +14,14 @@
     "url": "https://github.com/revolunet/color-seed/issues"
   },
   "dependencies": {
-    "nice-color-palettes": "^2.0.0",
+    "chroma-js": "^1.3.4",
     "seedrandom": "^2.4.3"
+  },
+  "devDependencies": {
+    "color-pairs-picker": "^1.3.6",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }

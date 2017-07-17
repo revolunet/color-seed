@@ -1,15 +1,21 @@
 var seedrandom = require('seedrandom');
+var chroma = require("chroma-js")
 
-var colors = require('nice-color-palettes').reduce((a, c) => {
-  a.push(...c)
-  return a
-}, [])
 
-const getRandomColor = seed => {
+const getPredictibleRandom = seed => {
   Math.seedrandom(seed);
-  const random = Math.random();
-  const color = colors[Math.floor(random * colors.length)]
-  return color;
+  return Math.random();
 }
 
-module.exports = getRandomColor
+const DEFAULT_SCALE = chroma.scale('Spectral')
+
+const getColor = (seed) => DEFAULT_SCALE(getPredictibleRandom(seed)).hex()
+
+const getColors = seeds => seeds.map(r => getColor(r));
+
+
+module.exports = {
+  default: getColor,
+  getColor,
+  getColors
+}

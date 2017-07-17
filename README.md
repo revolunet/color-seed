@@ -2,26 +2,29 @@
 
 [![npm package][npm-badge]][npm]
 
-Predictable colors generator from given seed.
+Stable colors generator from given seed(s).
 
-Based on [seedrandom](https://github.com/davidbau/seedrandom) and [nice-color-palettes](https://github.com/Jam3/nice-color-palettes).
+Based on [seedrandom](https://github.com/davidbau/seedrandom) and [chroma-js](http://gka.github.io/chroma.js) Spectral scale.
+
+![sample](./sample.png)
 
 ## Install
 
 `npm install color-seed`
 
-
 ## Usage
 
-```js
+```
+  colorSeed
+    colorSeed.getColor : single seed
+      ✓ getColor("Paris") should return #a70b44
+      ✓ getColor("Marseille") should return #7acaa5
+      ✓ getColor("Bordeaux") should return #9ed8a4
+    colorSeed.getColors : multiple seed
+      ✓ getColors(["Paris", "Marseille", "Bordeaux"]) should return #a70b44, #7acaa5, #9ed8a4
+      ✓ getColors(["Paris", "Marseille", "Bordeaux", "xxx"]) should return #a70b44, #7acaa5, #9ed8a4, #3683bb
 
-var getColor = require('color-seed');
-
-console.log(getColor('Paris')); // always #c8c8a9
-
-console.log(getColor('Bordeaux')); // always #535233
-
-console.log(getColor('Marseille')); // always #9dc9ac
+  5 passing (13ms)
 
 ```
 
