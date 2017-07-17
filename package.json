@@ -1,7 +1,7 @@
 {
   "name": "color-seed",
   "description": "Predictable colors generator from a seed",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Julien Bouquillon <julien@revolunet.com>",
   "license": "MIT",
   "main": "src/index",
