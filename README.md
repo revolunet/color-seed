@@ -4,7 +4,7 @@
 
 Stable colors generator from given seed(s).
 
-Based on [seedrandom](https://github.com/davidbau/seedrandom) and [chroma-js](http://gka.github.io/chroma.js) Spectral scale.
+Based on [seedrandom](https://github.com/davidbau/seedrandom), [chroma-js](http://gka.github.io/chroma.js) Spectral scale.
 
 ![sample](./sample.png)
 
