@@ -14,7 +14,7 @@ function getColor(seed){
 }
 
 function getColors(seeds) {
-  return seeds.map(r => getColor(r));
+  return seeds.map(getColor);
 }
 
 
