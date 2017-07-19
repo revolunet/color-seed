@@ -20,6 +20,6 @@ function getColors(seeds) {
 
 module.exports = {
   default: getColor,
-  getColor,
-  getColors
+  getColor: getColor,
+  getColors: getColors
 }
