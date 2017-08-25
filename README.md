@@ -14,6 +14,16 @@ Based on [seedrandom](https://github.com/davidbau/seedrandom), [chroma-js](http:
 
 ## Usage
 
+```js
+import color from "color-seed";
+
+const parisColor = color.getColor('paris');
+// always return #a70b44
+```
+
+demo : https://codesandbox.io/s/jzqn0m1z03
+
+## Tests
 ```
   colorSeed
     colorSeed.getColor : single seed
